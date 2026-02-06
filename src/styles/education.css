@@ -1,0 +1,80 @@
+/* Education Page Styles */
+.education-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: calc(100vh - 80px);
+}
+
+.education-container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #4caf50;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(26, 46, 29, 0.5);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  animation: slideInUp 0.8s ease-out;
+}
+
+table th {
+  background: linear-gradient(135deg, #0d1b0f 0%, #1a2e1d 100%);
+  color: #4caf50;
+  padding: 1.2rem;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #4caf50;
+  font-size: 1rem;
+}
+
+table td {
+  padding: 1rem 1.2rem;
+  color: #d4e8d6;
+  border-bottom: 1px solid rgba(76, 175, 80, 0.2);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+table tr:hover {
+  background-color: rgba(76, 175, 80, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .education-container {
+    padding: 1rem;
+  }
+
+  .education-container h1 {
+    font-size: 1.8rem;
+  }
+
+  table th,
+  table td {
+    padding: 0.8rem;
+    font-size: 0.85rem;
+  }
+}

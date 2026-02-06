@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import image from "./images/Siva_portfolio.jpeg";
+import "./App.css";
 
-function App() {
+function App (){
+let message = "Sivajeeva Raj P" ;
+let message2 = "Full-Stack Web Developer";
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <p className="Name">{message}</p>
+      <p className="message" >{message2}</p>
+      <img className="images" src = {image} alt="Sivajeeva" />
     </div>
-  );
+  )
 }
-
 export default App;
