@@ -1,6 +1,6 @@
 /* Contact Page Styles */
 .contact-container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
   min-height: calc(100vh - 80px);
@@ -8,59 +8,66 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
-.contact-container h2 {
+.contact-container h1 {
   font-size: 2.5rem;
   font-weight: 700;
   color: #4caf50;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   animation: fadeIn 0.6s ease-out;
+  text-align: center;
 }
 
-.contact-container ul {
-  background: rgba(26, 46, 29, 0.5);
-  border: 2px solid rgba(76, 175, 80, 0.3);
-  border-radius: 12px;
-  padding: 2.5rem;
-  list-style: none;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  animation: slideInUp 0.8s ease-out 0.2s both;
+.contact-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
   width: 100%;
+  max-width: 1000px;
+  animation: slideInUp 0.8s ease-out 0.2s both;
 }
 
-.contact-container li {
-  color: #d4e8d6;
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-  background: rgba(76, 175, 80, 0.08);
-  border-radius: 8px;
-  transition: all 0.3s ease;
+.contact-item {
+  background: rgba(26, 46, 29, 0.5);
   border-left: 4px solid #4caf50;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  text-align: center;
 }
 
-.contact-container li:hover {
-  background: rgba(76, 175, 80, 0.15);
-  transform: translateX(10px);
-  border-left-color: #a8d5a8;
+.contact-item:hover {
+  box-shadow: 0 8px 20px rgba(76, 175, 80, 0.2);
+  transform: translateY(-5px);
 }
 
-.contact-container li:last-child {
-  margin-bottom: 0;
+.contact-item h3 {
+  font-size: 1.2rem;
+  color: #a8d5a8;
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 1.05rem;
 }
 
 /* Link Styles */
-.contact-container a {
+.contact-item a {
   color: #4caf50;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
+  word-break: break-all;
 }
 
-.contact-container a:hover {
+.contact-item a:hover {
   color: #a8d5a8;
   text-decoration: underline;
 }
@@ -90,16 +97,25 @@
     padding: 1rem;
   }
 
-  .contact-container h2 {
+  .contact-container h1 {
     font-size: 1.8rem;
+    margin-bottom: 2rem;
   }
 
-  .contact-container ul {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .contact-item {
     padding: 1.5rem;
   }
 
-  .contact-container li {
+  .contact-item h3 {
+    font-size: 1.1rem;
+  }
+
+  .contact-item p {
     font-size: 1rem;
-    padding: 0.8rem;
   }
 }

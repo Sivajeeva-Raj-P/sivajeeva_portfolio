@@ -17,48 +17,56 @@
 
 .project-item {
   background: rgba(26, 46, 29, 0.5);
-  border: 2px solid rgba(76, 175, 80, 0.3);
   border-left: 4px solid #4caf50;
   padding: 2rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
   animation: slideInUp 0.8s ease-out;
+  transition: all 0.3s ease;
 }
 
 .project-item:hover {
-  border-color: #4caf50;
   box-shadow: 0 8px 20px rgba(76, 175, 80, 0.2);
   transform: translateY(-5px);
 }
 
 .project-item h5 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #4caf50;
-  margin: 0 0 0.8rem 0;
+  margin: 0 0 0.5rem 0;
   font-weight: 600;
 }
 
-.project-item p {
+.project-item span {
   color: #a8d5a8;
   font-size: 0.95rem;
   font-style: italic;
-  margin: 0.5rem 0 1rem 0;
+}
+
+.project-item p {
+  color: #d4e8d6;
+  margin: 0.8rem 0;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 .project-item ul {
-  list-style-type: circle;
+  color: #d4e8d6;
   padding-left: 1.5rem;
-  margin: 0;
+  margin: 1rem 0 0 0;
+  list-style-type: circle;
 }
 
 .project-item li {
-  color: #d4e8d6;
   margin-bottom: 0.8rem;
   line-height: 1.6;
   font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.project-item li:hover {
+  color: #4caf50;
 }
 
 .project-item li::marker {
@@ -90,10 +98,9 @@
   }
 
   .project-item h5 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
-  .project-item p,
   .project-item li {
     font-size: 0.9rem;
   }

@@ -15,41 +15,65 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
+.education-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.education-card {
   background: rgba(26, 46, 29, 0.5);
+  border-left: 4px solid #4caf50;
+  padding: 2rem;
   border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   animation: slideInUp 0.8s ease-out;
+  transition: all 0.3s ease;
 }
 
-table th {
-  background: linear-gradient(135deg, #0d1b0f 0%, #1a2e1d 100%);
+.education-card:hover {
+  box-shadow: 0 8px 20px rgba(76, 175, 80, 0.2);
+  transform: translateY(-5px);
+}
+
+.degree-title {
+  font-size: 1.3rem;
   color: #4caf50;
-  padding: 1.2rem;
-  text-align: left;
+  margin: 0 0 0.8rem 0;
   font-weight: 600;
-  border-bottom: 2px solid #4caf50;
-  font-size: 1rem;
-}
-
-table td {
-  padding: 1rem 1.2rem;
-  color: #d4e8d6;
-  border-bottom: 1px solid rgba(76, 175, 80, 0.2);
-  font-size: 0.95rem;
   line-height: 1.5;
 }
 
-table tr:hover {
-  background-color: rgba(76, 175, 80, 0.1);
-  transition: background-color 0.3s ease;
+.institution {
+  color: #d4e8d6;
+  font-size: 1rem;
+  margin: 0.5rem 0 1rem 0;
+  line-height: 1.6;
 }
 
-table tr:last-child td {
-  border-bottom: none;
+.edu-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(76, 175, 80, 0.2);
+}
+
+.period {
+  color: #a8d5a8;
+  font-size: 0.95rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.grade {
+  background: rgba(76, 175, 80, 0.2);
+  color: #4caf50;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 0.95rem;
 }
 
 @keyframes slideInUp {
@@ -72,9 +96,24 @@ table tr:last-child td {
     font-size: 1.8rem;
   }
 
-  table th,
-  table td {
-    padding: 0.8rem;
-    font-size: 0.85rem;
+  .education-card {
+    padding: 1.5rem;
+  }
+
+  .degree-title {
+    font-size: 1.1rem;
+  }
+
+  .institution {
+    font-size: 0.9rem;
+  }
+
+  .edu-details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .grade {
+    align-self: flex-start;
   }
 }

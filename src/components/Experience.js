@@ -8,9 +8,9 @@ function Experience (){
             <div className="experience-item">
               <h5>Part-time Tutor</h5>
               <span>September 2025 - Present</span>
-              <p>Wayvida Learning, Thiruvanathapuram</p>
+              <p>Viskool, Thiruvanathapuram</p>
               <ul>
-                <li>Conduct one-on-one and group tutoring sessions for students in Science.</li>
+                <li>Conduct one-on-one and group tutoring sessions for students.</li>
                 <li>Develop personalized lesson plans and study materials to cater to individual student needs.</li>
                 <li>Monitor student progress and provide feedback to students and parents.</li>
                 <li>Foster a positive learning environment to encourage student engagement and motivation.</li>

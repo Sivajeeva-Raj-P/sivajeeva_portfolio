@@ -5,13 +5,25 @@ function Contact(){
     
     return (
         <div className="contact-container">
-            <h2> Contact Information</h2>
-            <ul type ="circle">
-                <li>Phone:    +91 98479 85176</li>
-                <li>E-mail:   priyajeeva.in@gmail.com</li>
-                <li>LinkedIn: https://www.linkedin.com/in/sivajeeva-raj-p</li>
-                <li>GitHub:   https://github.com/Sivajeeva-Raj-P</li>
-            </ul>
+            <h1>Contact Information</h1>
+            <div className="contact-content">
+                <div className="contact-item">
+                    <h3>Phone</h3>
+                    <p><a href="tel:+919847985176">+91 98479 85176</a></p>
+                </div>
+                <div className="contact-item">
+                    <h3>Email</h3>
+                    <p><a href="mailto:priyajeeva.in@gmail.com">priyajeeva.in@gmail.com</a></p>
+                </div>
+                <div className="contact-item">
+                    <h3>LinkedIn</h3>
+                    <p><a href="https://www.linkedin.com/in/sivajeeva-raj-p" target="_blank" rel="noopener noreferrer">sivajeeva-raj-p</a></p>
+                </div>
+                <div className="contact-item">
+                    <h3>GitHub</h3>
+                    <p><a href="https://github.com/Sivajeeva-Raj-P" target="_blank" rel="noopener noreferrer">Sivajeeva-Raj-P</a></p>
+                </div>
+            </div>
         </div>
     )
 }

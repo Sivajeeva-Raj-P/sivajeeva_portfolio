@@ -23,6 +23,12 @@
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   animation: slideInUp 0.8s ease-out;
+  transition: all 0.3s ease;
+}
+
+.experience-item:hover {
+  box-shadow: 0 8px 20px rgba(76, 175, 80, 0.2);
+  transform: translateY(-5px);
 }
 
 .experience-item h5 {
@@ -49,12 +55,18 @@
   color: #d4e8d6;
   padding-left: 1.5rem;
   margin: 1rem 0 0 0;
+  list-style-type: disc;
 }
 
 .experience-item li {
   margin-bottom: 0.8rem;
   line-height: 1.6;
   font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.experience-item li:hover {
+  color: #4caf50;
 }
 
 .experience-item li::marker {
@@ -87,5 +99,9 @@
 
   .experience-item h5 {
     font-size: 1.1rem;
+  }
+
+  .experience-item li {
+    font-size: 0.9rem;
   }
 }

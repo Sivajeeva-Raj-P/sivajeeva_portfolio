@@ -1,6 +1,6 @@
 /* Skills Page Styles */
 .skills-container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
   min-height: calc(100vh - 80px);
@@ -15,26 +15,43 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.skills-container h5 {
+/* Skill Category Container */
+.skill-category {
+  background: rgba(26, 46, 29, 0.5);
+  border-left: 4px solid #4caf50;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  animation: slideInUp 0.8s ease-out;
+  transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+  box-shadow: 0 8px 20px rgba(76, 175, 80, 0.2);
+  transform: translateY(-5px);
+}
+
+.skill-heading {
   font-size: 1.4rem;
-  color: #a8d5a8;
-  margin: 2rem 0 1rem 0;
-  padding-bottom: 0.8rem;
-  border-bottom: 2px solid #4caf50;
+  color: #4caf50;
+  margin: 0 0 1.5rem 0;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .skills-container ul {
   list-style-type: circle;
   padding-left: 2rem;
-  margin-bottom: 1.5rem;
+  margin: 0;
 }
 
 .skills-container li {
   color: #d4e8d6;
   margin-bottom: 1rem;
-  font-size: 1.05rem;
-  line-height: 1.6;
+  font-size: 1rem;
+  line-height: 1.7;
   transition: all 0.3s ease;
 }
 
@@ -45,17 +62,7 @@
 
 .skills-container li:hover {
   color: #4caf50;
-  transform: translateX(5px);
-}
-
-/* Skill Category Container */
-.skill-category {
-  background: rgba(26, 46, 29, 0.5);
-  padding: 1.5rem;
-  border-radius: 8px;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  animation: slideInUp 0.8s ease-out;
+  transform: translateX(8px);
 }
 
 @keyframes slideInUp {
@@ -78,7 +85,11 @@
     font-size: 1.8rem;
   }
 
-  .skills-container h5 {
+  .skill-category {
+    padding: 1.5rem;
+  }
+
+  .skill-heading {
     font-size: 1.2rem;
   }
 

@@ -8,7 +8,6 @@ function Navbar() {
     <div>
       <nav className="navbar">
         <NavLink to="/" className="link">Home</NavLink>
-        <NavLink to="/about" className="link">About</NavLink>
         <NavLink to="/skill" className="link">Skills</NavLink>
         <NavLink to="/experience" className="link">Experience</NavLink>
         <NavLink to="/projects" className="link">Projects</NavLink>

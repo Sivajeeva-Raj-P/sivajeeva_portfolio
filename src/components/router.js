@@ -1,5 +1,4 @@
 import { createBrowserRouter } from "react-router-dom";
-import About from "./About"; 
 import Education from "./Education" ;
 import Experience from "./Experience" ; 
 import Skill from "./Skills";       
@@ -13,7 +12,6 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { path: '/', element: <App/> },
-      { path: 'about', element: <About/> },
       { path: 'skill', element: <Skill/> },
       { path: 'experience', element: <Experience/> },
       { path: 'education', element: <Education/> },
