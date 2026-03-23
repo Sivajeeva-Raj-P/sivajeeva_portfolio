@@ -6,7 +6,7 @@ function Experience (){
         <div className="experience-container">
             <h1> Professional Experience / Internships</h1>
             <div className="experience-item">
-              <h5>Part-time Tutor</h5>
+              <h5>Faculty</h5>
               <span>September 2025 - Present</span>
               <p>Viskool, Thiruvanathapuram</p>
               <ul>
@@ -19,11 +19,13 @@ function Experience (){
 
             <div className="experience-item">
               <h5>Full-Stack Web Developer Intern</h5>
-              <span>August 2025 - Present</span>
+              <span>August 2025 - March 2026</span>
               <p>MashupStack, Thiruvanathapuram</p>
               <ul>
-                <li>Learning MERN Stack development with hands-on projects.</li>
-                <li>Using Node.js and Express.js for backend development and MongoDB for database management.</li>
+                <li>Developed hands-on experience in MERN stack by building responsive user interfaces and backend functionalities
+using React.js, Node.js, Express.js, and MongoDB.</li>
+                <li>Working on small tasks, exercises, and practice projects to strengthen understanding of full-stack development
+workflows.</li>
               </ul>
             </div>
 

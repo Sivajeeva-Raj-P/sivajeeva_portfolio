@@ -5,7 +5,7 @@ import React from "react";
 function DownloadCV() {
   return (
     <div className="cv-wrapper">
-      <a href="/Sivajeeva_CV_14022026.pdf" download className="link cv-btn">Download CV</a>
+      <a href="/Sivajeeva_CV_23032026.pdf" download className="link cv-btn">Download CV</a>
     </div>
   );
 }
