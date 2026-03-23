@@ -47,7 +47,8 @@ functionality.</li>
                     <li>Built an Express.js-based application for managing medicine inventory with features to add, edit, delete, and
 track stock.</li>
                     <li>Implemented user authentication, search functionality, pagination, and restricted users to a maximum of 5 medicine
-entries.</li>
+entries.
+</li>
                 </ul>
             </div>
             
