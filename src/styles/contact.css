@@ -1,121 +1,221 @@
-/* Contact Page Styles */
+
+/* CONTACT SECTION */
+
 .contact-container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem;
-  min-height: calc(100vh - 80px);
+  max-width: 1200px;
+  margin: auto;
+
+  min-height: 100vh;
+
+  padding: 4rem 5%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+/* SECTION TITLE */
+
 .contact-container h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 700;
+
   color: #4caf50;
-  margin-bottom: 3rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  animation: fadeIn 0.6s ease-out;
+
+  margin-bottom: 3.5rem;
+
   text-align: center;
+
+  letter-spacing: 1px;
+
+  position: relative;
 }
+
+/* UNDERLINE EFFECT */
+
+.contact-container h1::after {
+  content: "";
+
+  width: 80px;
+  height: 4px;
+
+  background: #4caf50;
+
+  display: block;
+
+  margin: 12px auto 0;
+
+  border-radius: 20px;
+}
+
+/* CONTACT GRID */
 
 .contact-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
   width: 100%;
-  max-width: 1000px;
-  animation: slideInUp 0.8s ease-out 0.2s both;
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 2rem;
 }
+
+/* CONTACT CARD */
 
 .contact-item {
-  background: rgba(26, 46, 29, 0.5);
-  border-left: 4px solid #4caf50;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.06);
+
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 18px;
+
+  padding: 2.2rem 2rem;
+
   text-align: center;
+
+  transition: all 0.35s ease;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+
+/* HOVER EFFECT */
 
 .contact-item:hover {
-  box-shadow: 0 8px 20px rgba(76, 175, 80, 0.2);
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+
+  border-color: rgba(76, 175, 80, 0.4);
+
+  box-shadow: 0 12px 28px rgba(76, 175, 80, 0.2);
 }
 
+/* CARD TITLE */
+
 .contact-item h3 {
-  font-size: 1.2rem;
-  color: #a8d5a8;
-  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+
+  color: #4caf50;
+
+  margin-bottom: 1rem;
+
   font-weight: 600;
+
   text-transform: uppercase;
+
   letter-spacing: 1px;
 }
 
+/* TEXT */
+
 .contact-item p {
   margin: 0;
-  font-size: 1.05rem;
+
+  font-size: 1rem;
+
+  color: #f1f1f1;
+
+  line-height: 1.7;
 }
 
-/* Link Styles */
+/* LINKS */
+
 .contact-item a {
-  color: #4caf50;
+  color: #ffffff;
+
   text-decoration: none;
-  font-weight: 600;
+
+  font-weight: 500;
+
   transition: all 0.3s ease;
-  word-break: break-all;
+
+  word-break: break-word;
 }
+
+/* LINK HOVER */
 
 .contact-item a:hover {
-  color: #a8d5a8;
-  text-decoration: underline;
+  color: #4caf50;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+/* OPTIONAL ICON STYLING */
+
+.contact-icon {
+  font-size: 2rem;
+
+  color: #4caf50;
+
+  margin-bottom: 1rem;
 }
 
-@keyframes slideInUp {
+/* ANIMATIONS */
+
+.contact-item {
+  animation: fadeUp 0.7s ease forwards;
+}
+
+/* KEYFRAMES */
+
+@keyframes fadeUp {
+
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(25px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-@media (max-width: 768px) {
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 992px) {
+
   .contact-container {
-    padding: 1rem;
+    padding: 3rem 4%;
   }
 
   .contact-container h1 {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .contact-container {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .contact-container h1 {
+    font-size: 2rem;
+
+    margin-bottom: 2.5rem;
   }
 
   .contact-content {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
   }
 
   .contact-item {
-    padding: 1.5rem;
+    padding: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .contact-container h1 {
+    font-size: 1.7rem;
   }
 
   .contact-item h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .contact-item p {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 }
+

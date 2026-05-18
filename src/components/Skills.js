@@ -7,25 +7,35 @@ function Skill(){
         <div className="skills-container">
             <h1>Skills</h1>
             <div className="skill-category">
-                <h2 className="skill-heading">Technical Skills</h2>
+                <h2 className="skill-heading">Technical Skills Development</h2>
                 <ul type="circle">
                     <li>FrontEnd: HTML, CSS, JavaScript, React.js</li>
                     <li>Backend: Node.js, Express.js</li>
-                    <li>Database: MongoDB</li>
+                    <li>Database: MongoDB, MySQL</li>
+                    <li>Programming:  Python </li>
                     <li>Tools: Git/GitHub, VS Code</li>
                 </ul>
             </div>
 
             <div className="skill-category">
-                <h2 className="skill-heading">Soft Skills</h2>
+                <h2 className="skill-heading">UI/UX Design</h2>
                 <ul type="circle">
-                    <li>Communication</li>
-                    <li>Presentation</li>
-                    <li>Mentoring</li>
-                    <li>Time Management</li>
-                    <li>Teamwork</li>
-                    <li>Problem-Solving</li>
-                </ul>
+                    <li>Figma</li>
+                    <li>Responsive Design</li>
+                    <li>Wireframing</li>
+                    <li>User-centered design</li>
+                    <li>UI/UX Principles</li>
+              </ul>
+            </div>
+
+             <div className="skill-category">
+                <h2 className="skill-heading">Data Analytics</h2>
+                <ul type="circle">
+                    <li>Excel</li>
+                    <li>MySQL</li>
+                    <li>Python</li>
+                    <li>Power BI</li>
+              </ul>
             </div>
 
             <div className="skill-category">

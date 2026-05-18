@@ -1,25 +1,48 @@
+
 import React from "react";
 import image from "./images/Siva_portfolio.jpeg";
 import "./App.css";
 
-function App (){
-let message = "Sivajeeva Raj P" ;
-let message2 = "Full-Stack Web Developer";
-let hi = "Hi All, I'm Sivajeeva !" 
-let about ="I focus on building clean, responsive, and user-friendly web applications using modern full-stack development practices. I work with React on the frontend and Node.js, Express.js, and MongoDB on the backend to create functional and structured solutions. My work emphasizes clarity, usability, and maintainable code. I enjoy solving problems, paying attention to detail, and creating smooth user experiences. I aim to contribute to meaningful digital projects while continually strengthening my technical capabilities."
+function App() {
+
+  const message = "Sivajeeva Raj P";
+
+  const message2 =
+    "Software Developer | UI/UX Enthusiast | Data Analytics & Technical Training";
+
+  const hi = "Hi All, I'm Sivajeeva !";
+
+  const about =
+    "Aspiring technology professional with hands-on experience in Full Stack Web Development, Frontend Development, UI/UX Design, and data-related technologies. Skilled in building responsive web applications and user-friendly digital interfaces using HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB, and MySQL, along with designing modern UI layouts using Figma. Familiar with Python, Excel, and data analysis concepts, with a strong interest in creating responsive, accessible, and user-focused digital solutions while continuously learning modern technologies and development practices.";
 
   return (
     <div className="app-container">
+
       <div className="left-section">
-        <p className="Name">{message}</p>
-        <p className="message" >{message2}</p>
-        <img className="images" src = {image} alt="Sivajeeva" />
+
+        <img
+          className="images"
+          src={image}
+          alt="Sivajeeva Raj P"
+        />
+
+        <h1 className="Name">{message}</h1>
+
+        <p className="message">{message2}</p>
+
       </div>
+
       <div className="right-section">
-            <h1 className="name"> {hi}</h1>
-            <p className="about">{about}</p>
+
+        <h2 className="intro-heading">{hi}</h2>
+
+        <p className="about">{about}</p>
+
       </div>
+
     </div>
-  )
+  );
 }
+
 export default App;
+

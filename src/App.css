@@ -1,222 +1,214 @@
-/* Body Styles */
+
+/* GLOBAL STYLES */
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  /* Dark overlay for improved readability and professional look */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("./images/background.jpg");
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("./images/background.jpg");
+
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
-  color: #ffffff;
+  background-attachment: fixed;
+
+  color: white;
 }
 
-/* Home Page Container */
+/* MAIN CONTAINER */
+
 .app-container {
+  min-height: calc(100vh - 70px);
+
   display: flex;
-  gap: 4rem;
   align-items: center;
   justify-content: center;
-  min-height: calc(100vh - 80px);
-  padding: 0.5rem 3rem 3rem;
-  max-width: 1400px;
+
+  gap: 4rem;
+
+  padding: 1rem 5% 2rem;
+
+  max-width: 1300px;
+
   margin: 0 auto;
 }
 
-/* Left Section - Photo and Name */
+/* LEFT SECTION */
+
 .left-section {
+  flex: 1;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex: 0 0 auto;
-}
 
-/* Right Section - About */
-.right-section {
-  flex: 1;
-  padding: 2rem;
-}
-
-/* Name Heading */
-.Name {
-  font-size: 2.8rem;
-  font-weight: 700;
-  color: white;
-  margin: 1rem 0 0.5rem 0;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  animation: slideInDown 0.8s ease-out;
   text-align: center;
 }
 
-/* Professional Title */
-.message {
-  font-size: 1.3rem;
-  color: #4caf50;
-  margin: 0 0 2rem 0;
-  font-weight: 600;
-  letter-spacing: 1px;
-  animation: slideInUp 0.8s ease-out 0.2s both;
-  text-align: center;
-}
+/* PROFILE IMAGE */
 
-/* Profile Image */
 .images {
-  width: 280px;
-  height: 280px;
+  width: 260px;
+  height: 260px;
+
   object-fit: cover;
+
   border-radius: 50%;
+
   border: 4px solid #4caf50;
-  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  animation: slideInUp 0.8s ease-out 0.4s both;
-  margin-bottom: 1rem;
+
+  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.35);
+
+  transition: all 0.4s ease;
 }
 
-/* Image Hover Effect */
+/* IMAGE HOVER */
+
 .images:hover {
-  transform: scale(1.08) translateY(-10px);
+  transform: scale(1.05);
+
   box-shadow: 0 12px 35px rgba(76, 175, 80, 0.5);
 }
 
-/* About Section */
-.right-section .name {
-  font-size: 1.8rem;
+/* NAME */
+
+.Name {
+  font-size: 2.5rem;
   font-weight: 700;
+
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+
+  color: white;
+}
+
+/* SUBTITLE */
+
+.message {
+  font-size: 1.1rem;
+
   color: #4caf50;
-  margin: 0 0 1.5rem 0;
-  text-align: left;
-  animation: slideInRight 0.8s ease-out 0.3s both;
+
+  max-width: 420px;
+
+  line-height: 1.6;
+
+  font-weight: 500;
 }
 
-.right-section .about {
+/* RIGHT SECTION */
+
+.right-section {
+  flex: 1.2;
+
+  max-width: 650px;
+}
+
+/* INTRO HEADING */
+
+.intro-heading {
+  font-size: 2rem;
+
+  color: #4caf50;
+
+  margin-bottom: 1.5rem;
+}
+
+/* ABOUT TEXT */
+
+.about {
   font-size: 1.05rem;
-  color: #d4e8d6;
-  line-height: 1.8;
+
+  line-height: 1.9;
+
+  color: #e0e0e0;
+
   text-align: justify;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-  animation: slideInRight 0.8s ease-out 0.4s both;
 }
 
-/* Animations */
-@keyframes slideInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+/* RESPONSIVE DESIGN */
 
-@keyframes slideInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+@media (max-width: 992px) {
 
-@keyframes slideInRight {
-  from {
-    opacity: 0;
-    transform: translateX(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
   .app-container {
+    flex-direction: column;
+
+    text-align: center;
+
     gap: 3rem;
-    padding: 80px 2rem 2rem;
+
+    padding: 1rem 2rem 2rem;
   }
 
-  .Name {
-    font-size: 2.3rem;
+  .right-section {
+    max-width: 100%;
   }
 
-  .message {
-    font-size: 1.1rem;
-  }
-
-  .images {
-    width: 240px;
-    height: 240px;
-  }
-
-  .about-container .name {
-    font-size: 1.5rem;
-  }
-
-  .about-container .about {
-    font-size: 1rem;
+  .about {
+    text-align: left;
   }
 }
 
 @media (max-width: 768px) {
+
   .app-container {
-    flex-direction: column;
     gap: 2rem;
-    padding: 80px 1.5rem 2rem;
-  }
 
-  .left-section {
-    width: 100%;
-  }
-
-  .right-section {
-    width: 100%;
-    padding: 1.5rem;
+    padding: 1rem 1.5rem 2rem;
   }
 
   .Name {
     font-size: 2rem;
   }
 
+  .intro-heading {
+    font-size: 1.7rem;
+  }
+
   .message {
     font-size: 1rem;
   }
 
   .images {
-    width: 200px;
-    height: 200px;
+    width: 210px;
+    height: 210px;
   }
 
-  .about-container .name {
-    font-size: 1.4rem;
-    text-align: center;
-  }
+  .about {
+    font-size: 0.98rem;
 
-  .about-container .about {
-    font-size: 0.95rem;
-    text-align: left;
+    line-height: 1.8;
   }
 }
 
 @media (max-width: 480px) {
-  .App {
-    padding: 100px 1rem 1rem;
+
+  .app-container {
+    padding: 0.5rem 1rem 1.5rem;
   }
 
   .Name {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
-  .message {
-    font-size: 1rem;
+  .intro-heading {
+    font-size: 1.4rem;
   }
 
   .images {
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
+  }
+
+  .about {
+    font-size: 0.92rem;
   }
 }
+
